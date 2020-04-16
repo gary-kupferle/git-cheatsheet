@@ -81,6 +81,9 @@ $ git push origin branch-name
 # compare differences
 $ git diff [COMMIT_OR_BRANCH1] [COMMIT_OR_BRANCH2]
 
+# compare differences, list file names only
+$ git diff --name-only [COMMIT_OR_BRANCH1] [COMMIT_OR_BRANCH2]
+
 # compare current local branch with remote BRANCH_NAME  
 $ git diff origin/[BRANCH_NAME] 
 
