@@ -81,6 +81,12 @@ $ git push origin branch-name
 # compare differences
 $ git diff [COMMIT_OR_BRANCH1] [COMMIT_OR_BRANCH2]
 
+# compare differences of a single file across branches
+$ git diff mybranch..master -- myfile.cs
+  or
+$ git diff mybranch master -- myfile.cs
+
+
 # compare differences, list file names only
 $ git diff --name-only [COMMIT_OR_BRANCH1] [COMMIT_OR_BRANCH2]
 
