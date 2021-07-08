@@ -151,6 +151,23 @@ $ git reset HEAD~1
 $ git checkout filename
 ```  
 
+#### Reset a remote branch to another remote branch (e.g., make develop like master)
+```bash
+# Checkout the branch locally and get latest (using 'develop' for this example)
+git checkout develop
+git pull
+
+# Get latest code from master (or specifiy <branch> for non-default branch)
+git fetch origin [<branch>]
+
+# Reset the current branch (from 'git checkout' above). 
+# Change 'master' to branch used in fetch if not default/master
+git reset --hard origin/master 
+
+# Force push it to origin 
+git push -f origin develop
+```
+
 #### Tags
 ```bash
 # 2 Commands that shows all tags applied on remote
