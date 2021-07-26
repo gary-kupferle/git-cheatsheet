@@ -9,6 +9,14 @@ $ git branch --merged
 # see all branches local and remote 
 $ git branch -a 
 ```
+#### Info on remote
+```bash
+# Not connected, just want the remote URL
+$ git config --get remote.origin.url
+
+# Connected and/or want want full details on the remote
+$ git remote show origin
+```
 
 #### Checkout a branch/commit/tag from local or another host
 ```bash
