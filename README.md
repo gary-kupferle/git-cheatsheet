@@ -191,7 +191,7 @@ $ git push origin :refs/tags/[TAG_NAME]
 # Create a new branch at a specific tag
 $ git checkout -b [BRANCH_NAME] [TAG_NAME] 
 
-# List tags by date (after fetch if you want tags from remote)
+# List tags by date (after git fetch --tags if you want the latest tags from remote)
 git for-each-ref --sort=creatordate --format '%(refname) %(creatordate)' refs/tags
 ```
 
