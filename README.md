@@ -4,16 +4,26 @@ Common and/or useful Git commands
 #### Info on branches
 ```bash
 # see branches that have been merged and can be cleaned up 
-$ git branch --merged 
-
-# see all branches local and remote 
-$ git branch -a 
+git branch --merged 
 ```
+
+```bash
+# see all branches local and remote 
+git branch -a 
+```
+
+```
+# Print/show current branch
+git branch --show-current
+```
+
 #### Info on remote
 ```bash
 # Not connected, just want the remote URL
 $ git config --get remote.origin.url
+```
 
+```
 # Connected and/or want want full details on the remote
 $ git remote show origin
 ```
